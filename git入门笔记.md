@@ -36,15 +36,21 @@ Git Bash是是Windows下的命令行工具，可以执行Linux命令。
 
 添加一个或多个文件到暂存区：
 
-> git add [file1] [file2] ...  
+```shell
+git add [file1] [file2] ...
+```
 
 添加指定目录到暂存区，包括子目录：
 
-> git add [dir]
+```shell
+git add [dir]
+```
 
 添加当前目录下的所有文件到暂存区：
 
-> git add .
+```shell
+git add .
+```
 
 执行 **git status**，就可以看到这暂存区里的文件状态：
 
@@ -56,8 +62,36 @@ AM：添加到暂存区之后又有改动
 
 将暂存区内容添加到本地仓库中:
 
-> git commit -m [message]
+```shell
+git commit -m [message]
+```
 
 提交暂存区的指定文件到仓库区：
 
-> git commit [file1] [file2] ... -m [message]
+```shell
+git commit [file1] [file2] ... -m [message]
+```
+
+### git branch
+
+创建一个分支
+
+```shell
+git branch <branch name>
+```
+
+列出分支
+
+```shell
+git branch
+```
+
+### git fetch
+
+`git fetch`将远程主机的最新内容拉到本地，用户在检查了以后决定是否合并到工作本机分支中。
+
+`git pull`  则是将远程主机的最新内容拉下来后直接合并。
+
+区别如图所示
+
+![](http://kmknkk.oss-cn-beijing.aliyuncs.com/image/git.jpg)
